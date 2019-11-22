@@ -4,3 +4,4 @@ twig:
     globals:
         app_name_meta:
             version: !php/const App\Kernel::VERSION
+        ga_tracking: '%env(GOOGLE_ANALYTICS_TRACKING_ID)%'
