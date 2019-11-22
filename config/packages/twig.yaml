@@ -1,3 +1,5 @@
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    globals:
+        ga_tracking: '%env(GOOGLE_ANALYTICS_TRACKING_ID)%'
