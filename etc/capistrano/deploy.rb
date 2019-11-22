@@ -26,13 +26,13 @@ set :assets_install_flags,  '--symlink'
 set :linked_files, ['.env.local']
 set :linked_dirs, ["var/log", "var/sessions", "public/uploads", "public/media"]
 
-set :application, 'AppName'
-set :repo_url, 'https://github.com/AppName/AppName.git'
+set :application, 'Monofony'
+set :repo_url, 'https://github.com/Monofony/MonofonyDemo.git'
 
 # Default branch is :master
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-set :deploy_to, '/home/app_name/'
+set :deploy_to, '/home/mobizel/rd_042_monofony_demo'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -50,7 +50,7 @@ append :linked_files, fetch(:web_path) + '/robots.txt'
 append :linked_dirs, fetch(:web_path) + '/uploads', fetch(:web_path) + '/media'
 
 set :file_permissions_paths, ["var", "public/uploads"]
-set :file_permissions_users, ["app_name"]
+set :file_permissions_users, fetch(:file_permissions_users, []).push('www-data')
 
 set :permission_method,   :acl
 set :use_set_permissions, true
