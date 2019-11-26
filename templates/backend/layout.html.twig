@@ -1,6 +1,11 @@
-{% extends 'SyliusUiBundle:Layout:sidebar.html.twig' %}
+{% extends '@SyliusUi/Layout/sidebar.html.twig' %}
 
 {% block title %}AppName | {% endblock %}
+
+{% block head %}
+    {% include '_analytics.html.twig' %}
+    {{ parent() }}
+{% endblock %}
 
 {% block stylesheets %}
     {% include 'SyliusUiBundle::_stylesheets.html.twig' with {'path': 'assets/backend/app.css'} %}
