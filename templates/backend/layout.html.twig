@@ -3,9 +3,15 @@
 {% block title %}Monofony | {% endblock %}
 
 {% block head %}
-    {% include '_analytics.html.twig' %}
+    {{ google_tag_manager_head() }}
     {{ parent() }}
 {% endblock %}
+
+{% block body %}
+    {{ google_tag_manager_body() }}
+    {{ parent() }}
+    {{ google_tag_manager_body_end() }}
+{% endblock body %}
 
 {% block stylesheets %}
     {% include 'SyliusUiBundle::_stylesheets.html.twig' with {'path': 'assets/backend/app.css'} %}

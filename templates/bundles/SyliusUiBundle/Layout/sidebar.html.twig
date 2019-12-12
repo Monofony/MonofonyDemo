@@ -23,41 +23,43 @@
 </head>
 
 <body class="pushable">
-<div class="ui sidebar vertical inverted menu visible left" id="sidebar">
-    {% block sidebar %}
-    {% endblock %}
-</div>
-<div class="ui borderless fixed menu">
-    {% block topbar %}
-    {% endblock %}
-</div>
-<div class="pusher">
-    <div class="full height" id="wrapper">
-        <div id="content">
-            {% block flash_messages %}
-                {% include '@SyliusUi/_flashes.html.twig' %}
-            {% endblock %}
-
-            {% block pre_content %}
-            {% endblock %}
-
-            {% block content %}
-            {% endblock %}
-
-            {% block post_content %}
+    {% block body %}
+        <div class="ui sidebar vertical inverted menu visible left" id="sidebar">
+            {% block sidebar %}
             {% endblock %}
         </div>
-
-        <div class="sylius-footer">
-            {% block footer %}
+        <div class="ui borderless fixed menu">
+            {% block topbar %}
             {% endblock %}
         </div>
-    </div>
-</div>
+        <div class="pusher">
+            <div class="full height" id="wrapper">
+                <div id="content">
+                    {% block flash_messages %}
+                        {% include '@SyliusUi/_flashes.html.twig' %}
+                    {% endblock %}
 
-{% include '@SyliusUi/Modal/_confirmation.html.twig' %}
+                    {% block pre_content %}
+                    {% endblock %}
 
-{% block javascripts %}
-{% endblock %}
-</body>
+                    {% block content %}
+                    {% endblock %}
+
+                    {% block post_content %}
+                    {% endblock %}
+                </div>
+
+                <div class="sylius-footer">
+                    {% block footer %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+
+        {% include '@SyliusUi/Modal/_confirmation.html.twig' %}
+
+        {% block javascripts %}
+        {% endblock %}
+    {% endblock %}
+    </body>
 </html>

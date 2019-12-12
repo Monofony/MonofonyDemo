@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {% include '_analytics.html.twig' %}
+    {{ google_tag_manager_head() }}
     <meta charset="UTF-8"/>
     <title>{% block title %}Monofony{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
 </head>
 <body class="pushable">
+{{ google_tag_manager_body() }}
 <div class="pusher">
     {% block top %}
         <div id="menu" class="ui large sticky inverted stackable menu">
@@ -41,5 +42,6 @@
     {{ sonata_block_render_event('sylius.shop.layout.javascripts') }}
 {% endblock %}
 {% include '@SyliusUi/Modal/_confirmation.html.twig' %}
+{{ google_tag_manager_body_end() }}
 </body>
 </html>
