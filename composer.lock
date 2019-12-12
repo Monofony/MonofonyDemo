@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61c49324a992d435d29b2dc8fbe7766f",
+    "content-hash": "419d8e0628fe7b348d5e99db7b2d0484",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -4570,7 +4570,7 @@
         },
         {
             "name": "sylius/customer",
-            "version": "v1.6.4",
+            "version": "v1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Customer.git",
@@ -4637,7 +4637,7 @@
         },
         {
             "name": "sylius/customer-bundle",
-            "version": "v1.6.4",
+            "version": "v1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusCustomerBundle.git",
@@ -5125,7 +5125,7 @@
         },
         {
             "name": "sylius/ui-bundle",
-            "version": "v1.6.4",
+            "version": "v1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusUiBundle.git",
@@ -5200,7 +5200,7 @@
         },
         {
             "name": "sylius/user",
-            "version": "v1.6.4",
+            "version": "v1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/User.git",
@@ -5274,16 +5274,16 @@
         },
         {
             "name": "sylius/user-bundle",
-            "version": "v1.6.4",
+            "version": "v1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusUserBundle.git",
-                "reference": "4c6ba374e913a10a3b8336e12ae795ebc00cf980"
+                "reference": "e4779a24758a44cf0df637a94badb1d3fb88e509"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusUserBundle/zipball/4c6ba374e913a10a3b8336e12ae795ebc00cf980",
-                "reference": "4c6ba374e913a10a3b8336e12ae795ebc00cf980",
+                "url": "https://api.github.com/repos/Sylius/SyliusUserBundle/zipball/e4779a24758a44cf0df637a94badb1d3fb88e509",
+                "reference": "e4779a24758a44cf0df637a94badb1d3fb88e509",
                 "shasum": ""
             },
             "require": {
@@ -5361,7 +5361,7 @@
                 "registration",
                 "user"
             ],
-            "time": "2019-10-07T14:51:38+00:00"
+            "time": "2019-12-11T13:38:11+00:00"
         },
         {
             "name": "symfony/asset",
@@ -9669,6 +9669,58 @@
                 "symfony"
             ],
             "time": "2018-02-12T10:55:50+00:00"
+        },
+        {
+            "name": "xynnn/google-tag-manager-bundle",
+            "version": "2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xyNNN/GoogleTagManagerBundle.git",
+                "reference": "e293357e2b73f3a6ba7ec3c84f3853f7627f0618"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xyNNN/GoogleTagManagerBundle/zipball/e293357e2b73f3a6ba7ec3c84f3853f7627f0618",
+                "reference": "e293357e2b73f3a6ba7ec3c84f3853f7627f0618",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "symfony/config": "~2.8|~3.0|~4.0|~5.0",
+                "symfony/dependency-injection": "~2.8|~3.0|~4.0|~5.0",
+                "symfony/http-kernel": "~2.8|~3.0|~4.0|~5.0",
+                "symfony/templating": "~2.8|~3.0|~4.0|~5.0",
+                "twig/twig": "~1.23|~2.0"
+            },
+            "conflict": {
+                "twig/twig": ">=3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Xynnn\\GoogleTagManagerBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Philipp Bräutigam",
+                    "email": "philipp.braeutigam@googlemail.com"
+                }
+            ],
+            "description": "Google Tag Manager Bundle for Symfony",
+            "homepage": "https://github.com/xyNNN/GoogleTagManagerBundle",
+            "keywords": [
+                "Google Tag Manager",
+                "tag manager"
+            ],
+            "time": "2020-01-21T10:05:38+00:00"
         },
         {
             "name": "zendframework/zend-code",
