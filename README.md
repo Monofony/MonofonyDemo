@@ -9,7 +9,7 @@
     </a>    
 </h1>
 
-Search and replace 'app_name', 'AppName' et 'APP_NAME' with your application name
+Search and replace 'monofony', 'Monofony' et 'MONOFONY' with your application name
 
 Installation
 ------------
