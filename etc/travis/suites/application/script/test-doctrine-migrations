@@ -2,6 +2,6 @@
 
 source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../../../../bash/common.lib.sh"
 
-print_header "Testing (Doctrine Migrations)" "AppName"
+print_header "Testing (Doctrine Migrations)" "Monofony"
 run_command "bin/console doctrine:migrations:migrate first --no-interaction"
 run_command "bin/console doctrine:migrations:migrate latest --no-interaction"

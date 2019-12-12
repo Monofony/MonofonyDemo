@@ -39,9 +39,9 @@ class InstallDatabaseCommand extends Command
     {
         $this
             ->setName('app:install:database')
-            ->setDescription('Install AppName database.')
+            ->setDescription('Install Monofony database.')
             ->setHelp(<<<EOT
-The <info>%command.name%</info> command creates AppName database.
+The <info>%command.name%</info> command creates Monofony database.
 EOT
             )
         ;
@@ -56,7 +56,7 @@ EOT
     {
         $outputStyle = new SymfonyStyle($input, $output);
         $outputStyle->writeln(sprintf(
-            'Creating AppName database for environment <info>%s</info>.',
+            'Creating Monofony database for environment <info>%s</info>.',
             $this->environment
         ));
         $commands = $this

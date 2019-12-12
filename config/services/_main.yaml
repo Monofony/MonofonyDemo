@@ -3,9 +3,9 @@ imports:
     - { resource: "@SyliusUserBundle/Resources/config/app/config.yml" }
 
 parameters:
-    email_contact: contact@app_name.com
-    email_name: Contact AppName
-    email_sender: no-reply@app_name.com
+    email_contact: contact@monofony.com
+    email_name: Contact Monofony
+    email_sender: no-reply@monofony.com
 
 services:
     # default configuration for services in *this* file
