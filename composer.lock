@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d65ca45809f4169af850ec8a15a94ca",
+    "content-hash": "3e25902724996e80edb099d597d8be60",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -9221,6 +9221,54 @@
                 "symfony"
             ],
             "time": "2018-02-12T10:55:50+00:00"
+        },
+        {
+            "name": "xynnn/google-tag-manager-bundle",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xyNNN/GoogleTagManagerBundle.git",
+                "reference": "85334f2250eadcd04054251ba84bc19e85c842d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xyNNN/GoogleTagManagerBundle/zipball/85334f2250eadcd04054251ba84bc19e85c842d0",
+                "reference": "85334f2250eadcd04054251ba84bc19e85c842d0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/config": "~2.8|~3.0|~4.0",
+                "symfony/dependency-injection": "~2.8|~3.0|~4.0",
+                "symfony/http-kernel": "~2.8|~3.0|~4.0",
+                "symfony/templating": "~2.8|~3.0|~4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Xynnn\\GoogleTagManagerBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Philipp Bräutigam",
+                    "email": "philipp.braeutigam@googlemail.com"
+                }
+            ],
+            "description": "Google Tag Manager Bundle for Symfony",
+            "homepage": "https://github.com/xyNNN/GoogleTagManagerBundle",
+            "keywords": [
+                "Google Tag Manager",
+                "tag manager"
+            ],
+            "time": "2019-11-27T11:49:44+00:00"
         },
         {
             "name": "zendframework/zend-code",
