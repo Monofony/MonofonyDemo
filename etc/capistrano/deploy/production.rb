@@ -11,7 +11,7 @@ server '192.168.12.70',
   user: 'www-data',
   roles: %w{app db web},
   ssh_options: {
-    user: 'app_name', # overrides user setting above
+    user: 'monofony', # overrides user setting above
     # keys: %w(/home/user_name/.ssh/id_rsa),
     forward_agent: true,
     auth_methods: %w(publickey password)

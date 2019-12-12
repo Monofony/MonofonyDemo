@@ -119,23 +119,23 @@ get_number_of_jobs_for_parallel()
     echo "${jobs}"
 }
 
-get_app_name_path()
+get_monofony_path()
 {
     echo "$(cd "$(dirname "${BASH_SOURCE[0]}")/../../" && pwd)"
 }
 
-has_app_name_cache() {
-    if [[ ! -z "${APP_NAME_CACHE_DIR}" && -d "${APP_NAME_CACHE_DIR}" ]]; then
+has_monofony_cache() {
+    if [[ ! -z "${MONOFONY_CACHE_DIR}" && -d "${MONOFONY_CACHE_DIR}" ]]; then
         return 0
     else
         return 1
     fi
 }
 
-inform_about_app_name_cache() {
-    if ! has_app_name_cache; then
+inform_about_monofony_cache() {
+    if ! has_monofony_cache; then
         print_warning "Sylius cache should be used, but it is not configured correctly."
-        print_warning "Check whether you have \$APP_NAME_CACHE_DIR set and if that directory exists."
+        print_warning "Check whether you have \$MONOFONY_CACHE_DIR set and if that directory exists."
     fi
 }
 
@@ -178,9 +178,9 @@ is_package_cache_fresh() {
     local package_path="$(cast_package_argument_to_package_path "$1")"
     local cache_key="$(get_package_cache_key "$1")"
 
-    if [[ -f "${APP_NAME_CACHE_DIR}/composer-${cache_key}.lock" && -f "${APP_NAME_CACHE_DIR}/composer-${cache_key}.json.md5sum" ]]; then
+    if [[ -f "${MONOFONY_CACHE_DIR}/composer-${cache_key}.lock" && -f "${MONOFONY_CACHE_DIR}/composer-${cache_key}.json.md5sum" ]]; then
         current_hash="$(file_md5sum "${package_path}/composer.json")"
-        cached_hash="$(cat "${APP_NAME_CACHE_DIR}/composer-${cache_key}.json.md5sum")"
+        cached_hash="$(cat "${MONOFONY_CACHE_DIR}/composer-${cache_key}.json.md5sum")"
 
         if [ "${current_hash}" = "${cached_hash}" ]; then
             return 0
