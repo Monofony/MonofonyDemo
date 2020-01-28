@@ -7,6 +7,10 @@
     {{ parent() }}
 {% endblock %}
 
+{% block metatags %}
+    <meta name="description" content="Découvrez le back office de démonstration Monofony, le strater de projet open-source. Connectez-vous en tant qu'administrateur !">
+{% endblock %}
+
 {% block stylesheets %}
     {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/backend/app.css'} %}
 {% endblock %}
