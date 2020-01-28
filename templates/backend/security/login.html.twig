@@ -2,9 +2,20 @@
 
 {% block title %}Monofony | {{ 'sylius.ui.administration_panel_login'|trans }}{% endblock %}
 
+{% block head %}
+    {{ google_tag_manager_head() }}
+    {{ parent() }}
+{% endblock %}
+
 {% block stylesheets %}
     {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/backend/app.css'} %}
 {% endblock %}
+
+{% block body %}
+    {{ google_tag_manager_body() }}
+    {{ parent() }}
+    {{ google_tag_manager_body_end() }}
+{% endblock body %}
 
 {% block content %}
     {% include '@SyliusUi/Security/_login.html.twig' with {'action': path('sylius_backend_login_check'), 'paths': {'logo': 'assets/backend/img/logo.png'}} %}
